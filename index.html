@@ -1,15 +1,783 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="">
-    <title>Playsation email</title>
+    <!--link rel="stylesheet" href="/css/main.css"-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-</body>
+    <style>
+      /* desktop */
+      @media only screen and (min-width: 960px){
+        .container{
+          width: 960px;
+        }
+        .header-left{
+          padding: 15px 50px 70px !important;
+        }
+        .game-to-life-row{
+          padding: 0 50px;
+        }
+        .adventure-table{
+          padding: 15px 50px 10px 50px !important;
+        }
+        .adventure-img-sec{
+          text-align: center;
+        }
+        .adventure-table .img-adventure{
+          max-width: 620px;
+        }
+        .ingame-img .ingame-img-sec{
+          text-align: center;
+        }
+        .ingame-img .game-screen{
+          width: 100%;
+        }
+        .interest-table .interst-img-sec{
+          text-align: center;
+        }
+        .interest-table .interest-img{
+          max-width: 620px;
+        }
+        .playstation-plus .extra-sec{
+          padding: 0 50px;
+        }
+        .playstation-plus .essential-sec{
+          padding: 0 50px;
+        }
+        .playstation-plus .premium-sec{
+          padding: 0 50px;
+        }
+        .detail-table{
+          padding: 50px 50px 5px !important;
+        }
+      }
+      /* midsizes */
+      @media only screen and (max-width: 960px){
+        .container{
+          width: 600px;
+        }
+      }
+      /* mobile */
+      @media only screen and (max-width: 600px){
+        .container{
+          width: 100%;
+          padding: 0;
+          margin: 0;
+        }
+        .header-left{
+          width: 100%;
+        }
+        .header-right{
+          width: 100%;
+        }
+        .game-to-life-row .column-left{
+          width: 50%;
+        }
+        .game-to-life-row .column-middle{
+          width: 50%;
+        }
+        .game-to-life-row .column-right{
+          width: 100%;
+        }
+        .adventure-table .img-adventure{
+          width: 100%;
+        }
+        .ingame-img .game-screen{
+          width: 100%;
+        }
+        .interest-table .interest-img{
+          width: 100%;
+        }
+        .adventure-table .adventure-left-column{
+          width: 100%;
+        }
+        .adventure-table .adventure-right-column{
+          width: 100%;
+        }
+        .adventure-table .btn-watch{
+          position: relative;
+          text-align: center;
+          width: 100%;
+        }
+        .adventure-table .btn-buy{
+          position: relative;
+          text-align: center;
+          width: 100%;
+        }
+        .playstation-plus .extra-sec{
+          width: 100%;
+        }
+        .playstation-plus .essential-sec{
+          width: 100%;
+        }
+        .playstation-plus .premium-sec{
+          width: 100%;
+        }
+        .detail-table .one-row-table .left-column{
+          width: 100%;
+        }
+        .detail-table .one-row-table .right-column{
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body style="background: gray;">
+    <!--start of html email-->
+    <table width="100%" border="0" cellspacing="0" cellbading="0">
+      <tr>
+        <td>
+          <!--start of container -->
+          <table class="container" width="600" align="center" selfspacing="0" selfpadding="0" cellspacing="0" cellpadding="0" border="0" style="background: white;">
+            <!-- start of header row -->
+            <tr>
+              <td>
+                <!-- start left column -->
+                <table class="header-left" width="50%" align="left" selfspacing="0" selfpadding="0" border="0" style="background: rgb(7,66,146);
+                background: linear-gradient(174deg, rgba(7,66,146,1) 40%, rgba(0,116,255,1) 100%); padding: 15px 15px 70px 15px; position: relative;">
+                  <tr>
+                    <td style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: white;">
+                      <a href="#"><img src="./img/playstation-logo.png"></a>
+                      <h2 style="font-size: 29px; margin: 0; font-weight: 300; line-height: 1; padding: 25px 0 10px;">Experience More</h2>
+                      <h1 style="font-size: 48px; margin: 0; line-height: 1; padding: 0 0 10px;">Control</h1>
+                      <p style="font-style: italic; font-size: 12px; line-height: 1.5; margin: 0; padding: 20px 0 50px;">Experience the thrill of exploring
+                      new worlds with the new and fully customizable
+                      sony controller.</p>
+                      <a href="#" class="ghost-btn" style="font-size: 12px; border-radius: 3px; border: 2px solid white; text-decoration: none; color: white; padding: 10px 15px; text-transform: uppercase;">Learn More</a>
+                    </td>
+                  </tr>
+                </table>
+                <!-- End left column -->
+                <!-- start right column -->
+                <table class="header-right" width="50%" align="right" selfspacing="0" selfpadding="0" border="0">
+                  <tr>
+                    <td style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7d7d7d;">
+                      <table class="mebu-table" width="100%" align="center" selfspacing="0" selfpadding="0" border="0" style="padding: 20px;">
+                        <tr>
+                          <td align="center">
+                            <a href="#" style="color: #7d7d7d; font-size: 12px; font-weight: 600; text-decoration: none;">New Games</a>
+                          </td>
+                          <td align="center">
+                            <a href="#" style="color: #7d7d7d; font-size: 12px; font-weight: 600; text-decoration: none;">Collectibles</a>
+                          </td>
+                          <td align="center">
+                            <a href="#" style="color: #7d7d7d; font-size: 12px; font-weight: 600; text-decoration: none;">Pre-Owned</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="bottom" style="padding-top: 40px;">
+                      <a href="#"><img src="./img/ps-controller.png"></a>
+                    </td>
+                  </tr>
+                </table>
+                <!-- end right column -->
+              </td>
+            </tr>
+            <!-- end of header row -->
+            <!-- start of gaming to life row -->
+            <tr>
+              <td  class="game-to-life-row" style="background: #fafafa;">
+                <h3 style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #2792ec; font-weight: 300; 
+                font-size: 24px; padding: 36px 0 5px 0; text-transform: capitalize;" align="center">Bring gaming worlds to life</h3>
+                <!-- Start of left column -->
+                <table class="column-left" width="33.33%" align="left" selfspacing="0" selfpadding="0" border="0" style="padding: 15px 15px 70px 15px;">
+                <tr>
+                  <td>
+                    <table class="title-icon" width="33.33%" align="left" selfspacing="0" selfpadding="0" border="0" style="padding: 0;">
+                      <tr>
+                        <td><a href="#"><img src="./img/analog-logo.png" style="border-radius: 50%; padding: 0;"></a></td>
+                        <td style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; 
+                        text-transform: uppercase; font-size: 13px;">Haptic feedback</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; 
+                    font-size: 13px; line-height: 1.8;">Perceive your in-game actions and evironment simulated</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #2792ec; font-weight: 600; 
+                    text-decoration: none; font-size: 13px;">Learn More</a>
+                  </td>
+                </tr>
+                </table>
+                <!-- end of left column -->
+                <!-- Start of middle column -->
+                <table class="column-middle" width="33.33%" align="left" selfspacing="0" selfpadding="0" border="0" style="padding: 15px 15px 70px 15px;">
+                  <tr>
+                    <td>
+                      <table class="title-icon" width="33.33%" align="left" selfspacing="0" selfpadding="0" border="0" style="padding: 0;">
+                        <tr>
+                          <td><a href="#"><img src="./img/triggers-logo.png" style="border-radius: 50%; padding: 0;"></a></td>
+                          <td style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; 
+                          text-transform: uppercase; font-size: 13px;">Adaptive Triggers</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; 
+                      font-size: 13px; line-height: 1.8;">Experience varying force and tension at your fingertips</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #2792ec; font-weight: 600; 
+                      text-decoration: none; font-size: 13px;">Learn More</a>
+                    </td>
+                  </tr>
+                  </table>
+                  <!-- end of middle column -->
+                  <!-- Start of right column -->
+                <table class="column-right" width="33.33%" align="left" selfspacing="0" selfpadding="0" border="0" style="padding: 15px 15px 70px 15px;">
+                  <tr>
+                    <td>
+                      <table class="title-icon" width="33.33%" align="left" selfspacing="0" selfpadding="0" border="0" style="padding: 0;">
+                        <tr>
+                          <td><a href="#"><img src="./img/motion-logo.png" style="border-radius: 50%; padding: 0;"></a></td>
+                          <td style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; 
+                          text-transform: uppercase; font-size: 13px;">Motion Sensor</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; 
+                      font-size: 13px; line-height: 1.8;">Intuitively interact with our vast collection of unique games</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #2792ec; font-weight: 600; 
+                      text-decoration: none; font-size: 13px;">Learn More</a>
+                    </td>
+                  </tr>
+                  </table>
+                  <!-- end of right column -->
+                </td>
+            </tr>
+            <!-- end of gaming to life row -->
+            <!-- start of new adventures row -->
+            <tr>
+              <td>
+                <table class="adventure-table" width="100%" align="left" selfspacing="0" selfpadding="0" border="0" style="padding: 15px 15px 10px 15px; background: white;">
+                  <tr>
+                    <td class="adventure-img-sec" style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; font-weight: 300; 
+                    font-size: 24px; padding: 36px 0 5px 0;" align="center">
+                      <a href="#"><img src="./img/new-adventures-image.png.jpg" class="img-adventure"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h3 style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #2792ec; font-weight: 300; 
+                      font-size: 24px; padding: 25px 0 5px 0; margin: 0; text-transform: capitalize;" align="center">New adventures await | PS<br> VR2 games</h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table class="adventure-left-column" width="50%" align="left" selfspacing="0" selfpadding="0" border="0" style="padding: 15px 15px 0 15px; background: white;">
+                        <tr>
+                          <td>
+                            <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; 
+                            font-size: 13px; line-height: 1.8; padding: 0 0 10px;">See how you can experience realistic sensations and emotions in highly immersive Playstation VR2 games.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="right" class="btn-watch">
+                            <a href="#" style="font-size: 8px; border-radius: 50px; border: 2px solid #2792ec; text-decoration: none; color: #2792ec; padding: 10px 15px; text-transform: uppercase;">Watch the video</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="adventure-right-column" width="50%" align="left" selfspacing="0" selfpadding="0" border="0" style="padding: 15px 15px 0 15px; background: white;">
+                        <tr>
+                          <td>
+                            <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; 
+                            font-size: 13px; line-height: 1.8; padding: 0 0 10px;">Spine-chilling fear. Energising excitement. Breathtaking wonder. Thrills like no other.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" class="btn-buy">
+                            <a href="#" style="font-size: 8px; border-radius: 50px; border: 2px solid #ec5b27; text-decoration: none; color: #ec5b27; padding: 10px 15px; text-transform: uppercase;">Buy now</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- end of new adventures row -->
+            <!-- start of ingame-img row -->
+            <tr>
+              <td>
+                <table class="ingame-img" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 50px 0 0; background: white;">
+                  <tr>
+                    <td class="ingame-img-sec" style="background: black;">
+                      <a href="#"><img src="./img/ingame-image.jpg" class="game-screen"></a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- end of ingame-ing row -->
+            <!-- start of Playstation Plus row -->
+            <tr>
+              <td>
+                <table class="playstation-plus" width="100%" align="left" selfspacing="0" selfpadding="0" border="0" style="padding: 0 0 75px; background: white;">
+                  <tr>
+                    <td>
+                      <h3 style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #2792ec; font-weight: 300; 
+                      font-size: 24px; padding: 25px 0 0; text-transform: capitalize;" align="center">Welcome to Playstation Plus</h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <!-- start of column -->
+                      <table class="extra-sec" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 20px 0; background: white;">
+                        <tr>
+                          <td align="center">
+                            <a href="#"><img src="img/Extra.jpeg" alt="extra-logo" style="border-radius: 15px;"></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <h5 style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 10px 0; font-weight: 600; 
+                            text-transform: uppercase; font-size: 13px; margin: 0;">Extra</h5>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; 
+                            font-size: 14px; line-height: 1.8; margin: 0; padding: 0 0 15px 0;">Discover hundreds of games</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <a href="#" href="#" style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #2792ec; font-weight: 600; 
+                            text-decoration: none; font-size: 13px;">Learn More</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- end of column -->
+                      <!-- start of column -->
+                      <table class="essential-sec" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 20px 0; background: white;">
+                        <tr>
+                          <td align="center">
+                            <a href="#"><img src="./img/Essential.jpeg" alt="Essential-logo" style="border-radius: 15px;"></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <h5 style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 10px 0; font-weight: 600; 
+                            text-transform: uppercase; font-size: 13px; margin: 0;">Essential</h5>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; 
+                            font-size: 14px; line-height: 1.8; margin: 0; padding: 0 0 15px 0;">Monthly games, online multiplayer and more</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <a href="#" href="#" style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #2792ec; font-weight: 600; 
+                            text-decoration: none; font-size: 13px;">Learn More</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- end of column -->
+                      <!-- start of column -->
+                      <table class="premium-sec" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 20px 0; background: white;">
+                        <tr>
+                          <td align="center">
+                            <a href="#"><img src="./img/Premium.jpeg" style="border-radius: 15px;"></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <h5 style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 10px 0; font-weight: 600; 
+                            text-transform: uppercase; font-size: 13px; margin: 0;">Premium</h5>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; 
+                            font-size: 14px; line-height: 1.8; margin: 0; padding: 0 0 15px 0;">Experience all the benefits</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <a href="#" href="#" style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #2792ec; font-weight: 600; 
+                            text-decoration: none; font-size: 13px;">Learn More</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- end of column -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- end of Playstation Plus row -->
+            <!-- start of info row -->
+            <tr>
+              <td>
+                <!-- start of detail table -->
+                <table class="detail-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 50px 0 5px; background: #fafafa; position: relative; margin-bottom: -11px;">
+                  <tr>
+                    <td>
+                      <!-- start of one row table -->
+                      <table class="one-row-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0;">
+                        <tr>
+                          <td>
+                            <!-- start of column table -->
+                            <table class="left-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px;">
+                              <tr>
+                                <td>
+                                  <!-- start of icon table -->
+                                  <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
+                                    <td>
+                                      <img src="./img/online-multiplayer.png">
+                                    </td>
+                                    <td>
+                                      <td style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; 
+                                      text-transform: uppercase; font-size: 13px;">
+                                        online multiplayer
+                                      </td>
+                                    </td>
+                                    <!-- end of icon table -->
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; 
+                                  font-size: 13px; line-height: 1.8;">
+                                    Unleash the full potential of your favorite games and play online
+                                  </p>
+                                </td>
+                              </tr>
+                              <!-- end of column table -->
+                            </table>
+                            <!-- start of column table -->
+                            <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px;">
+                              <tr>
+                                <td>
+                                  <!-- start of icon table -->
+                                  <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
+                                    <td>
+                                      <img src="./img/discounts.png">
+                                    </td>
+                                    <td>
+                                      <td style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; 
+                                      text-transform: uppercase; font-size: 13px;">
+                                        exclusive discounts
+                                      </td>
+                                    </td>
+                                  <!-- end of icon table -->
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; 
+                                  font-size: 13px; line-height: 1.8;">
+                                    Get exclusive access to the best of deals on games, add-ons, and pre-orders
+                                  </p>
+                                </td>
+                              </tr>
+                              <!-- end of column table -->
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- end of one row table -->
+                      </table>
+                      <!-- start of one row table -->
+                      <table class="one-row-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0;">
+                        <tr>
+                          <td>
+                            <!-- start of column table -->
+                            <table class="left-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px;">
+                              <tr>
+                                <td>
+                                  <!-- start of icon table -->
+                                  <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
+                                    <td>
+                                      <img src="./img/exclusive-content.png">
+                                    </td>
+                                    <td>
+                                      <td style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; 
+                                      text-transform: uppercase; font-size: 13px;">
+                                        Exclusive content
+                                      </td>
+                                    </td>
+                                    <!-- end of icon table -->
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; 
+                                  font-size: 13px; line-height: 1.8;">
+                                    Stand out from the crowd with special skins, cosmetics, weapons and more free-to-play games
+                                  </p>
+                                </td>
+                              </tr>
+                              <!-- end of column table -->
+                            </table>
+                            <!-- start of column table -->
+                            <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px;">
+                              <tr>
+                                <td>
+                                  <!-- start of icon table -->
+                                  <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
+                                    <td>
+                                      <img src="./img/monthly-games.png">
+                                    </td>
+                                    <td>
+                                      <td style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; 
+                                      text-transform: uppercase; font-size: 13px;">
+                                        Monthly games
+                                      </td>
+                                    </td>
+                                  <!-- end of icon table -->
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; 
+                                  font-size: 13px; line-height: 1.8;">
+                                    Expand your collection with new PS4 games every month, plus PS5 games added regularly
+                                  </p>
+                                </td>
+                              </tr>
+                              <!-- end of column table -->
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- end of one row table -->
+                      </table>
+                      <!-- start of one row table -->
+                      <table class="one-row-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0;">
+                        <tr>
+                          <td>
+                            <!-- start of column table -->
+                            <table class="left-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px;">
+                              <tr>
+                                <td>
+                                  <!-- start of icon table -->
+                                  <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
+                                    <td>
+                                      <img src="./img/delivery-icon.png">
+                                    </td>
+                                    <td>
+                                      <td style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; 
+                                      text-transform: uppercase; font-size: 13px;">
+                                        Fast delivery
+                                      </td>
+                                    </td>
+                                    <!-- end of icon table -->
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; 
+                                  font-size: 13px; line-height: 1.8;">
+                                    No extra cost when buying games, accessories and more directly from Playstation
+                                  </p>
+                                </td>
+                              </tr>
+                              <!-- end of column table -->
+                            </table>
+                            <!-- start of column table -->
+                            <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px;">
+                              <tr>
+                                <td>
+                                  <!-- start of icon table -->
+                                  <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
+                                    <td>
+                                      <img src="./img/cloud-storage.png">
+                                    </td>
+                                    <td>
+                                      <td style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; 
+                                      text-transform: uppercase; font-size: 13px;">
+                                        Cloud storage
+                                      </td>
+                                    </td>
+                                  <!-- end of icon table -->
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; 
+                                  font-size: 13px; line-height: 1.8;">
+                                    Save up to 100GB of game data to the cloud and pick up where you left off on another console
+                                  </p>
+                                </td>
+                              </tr>
+                              <!-- end of column table -->
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- end of one row table -->
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- end of detail table -->
+                </table>
+              </td>
+            </tr>
+            <!-- end of info row -->
+            <!-- start of interest row -->
+            <tr>
+              <td>
+                <table class="interest-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background: silver;">
+                  <tr>
+                    <td class="interst-img-sec">
+                      <a href="#"><img src="./img/interest-img.png" class="interest-img"></a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- end of interest row -->
+            <!-- start of footer row -->
+            <tr>
+              <td>
+                <table class="foot-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 25px 0; background: rgb(7,66,146);
+                background: linear-gradient(174deg, rgba(7,66,146,1) 40%, rgba(0,116,255,1) 100%);">
+                  <tr>
+                    <td align="center" style="padding: 0 0 5px;">
+                      <a href="#"><img src="./img/playstation-logo.png"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h2 align="center" style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: white; font-weight: 500; text-transform: uppercase; margin: 0 0 5px; word-spacing: 3px; font-size: 15px;">
+                        play has no limits<span style="font-size: 6px; position: relative; top: -6px;">&trade;</span>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <hr style="max-width: 400px;">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table class="foot-icon-table" align="center" width="240px" align="left" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <td align="center">
+                            <a href="#"><img src="./img/twitter.png"></a>
+                          </td>
+                          <td>
+                            <a href="#"><img align="center" src="./img/instagram.png"></a>
+                          </td>
+                          <td>
+                            <a href="#"><img align="center" src="./img/youtube.png"></a>
+                          </td>
+                          <td>
+                            <a href="#"><img align="center" src="./img/facebook.png"></a>
+                          </td>
+                          <td>
+                            <a href="#"><img align="center" src="./img/snapchat.png"></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="padding: 15px 0 0;">
+                      <a href="#"><img src="./img/ages-e-m.png"></a>
+                    </td>                 
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; 
+                      font-size: 10px; line-height: 1.8; padding: 5px 0;">
+                        <a href="#" style="text-decoration: none; color: white;">
+                          View Online
+                        </a> | <a href="#" style="text-decoration: none; color: white;">
+                          Terms
+                        </a> | <a href="#" style="text-decoration: none; color: white;">
+                          Personalize
+                        </a> | <a href="#" style="text-decoration: none; color: white;">
+                          Unsubscribe
+                        </a>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- end of footer row -->
+            <!-- start of extended footer row -->
+            <tr>
+              <td>
+                <table class="foot-detail-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 25px 0 10px; background: silver;">
+                  <tr>
+                    <td align="center">
+                      <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; font-weight: 400; 
+                        font-size: 13px; line-height: 1.8; padding: 0; width: 400px; font-size: 10px; margin: 7px;">
+                        &copy;2023 Sony Interactive Entertainment LLC.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; font-weight: 400; 
+                        font-size: 13px; line-height: 1.8; padding: 0; width: 400px; font-size: 10px; margin: 7px;">
+                        "Playstation Family Mark","Playstation","PS5","PS4 logo" and "Play Has No Limits" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; font-weight: 400; 
+                        font-size: 13px; line-height: 1.8; padding: 0; width: 400px; font-size: 10px; margin: 7px;">
+                        All games featured are trademarked and copyrighted properties of their respective publishers and/or licensors.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; font-weight: 400; 
+                        font-size: 13px; line-height: 1.8; padding: 0; width: 400px; font-size: 10px; margin: 7px;">
+                        This e-mail message has been delivered from a send-only address. Please do not reply to this message. For more information about your account, please visit the link below.<br> Support: https://www.playstation.com/support/
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <p style="font-family: 'Open Sans', 'HelveticeNeue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; font-weight: 400; 
+                        font-size: 13px; line-height: 1.8; padding: 0; width: 400px; font-size: 10px; margin: 5px 0;">
+                        Sony Interactive Entertainment LLC, 2207 Bridgepointe Pkwy,<br> San Mateo, CA 94404, USA<br> <a href="#" style="text-decoration: none; color: #333333;">www.playstation.com.</a>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--end of container -->
+        </td>
+      </tr>
+    </table>
+    <!--end of html email-->
+  </body>
 </html>
